@@ -8,7 +8,7 @@ from n2v.models import N2VConfig, N2V
 import numpy as np
 from n2v.utils.n2v_utils import manipulate_val_data
 from n2v.internals.N2V_DataGenerator import N2V_DataGenerator
-from n2v.utils.evaluation_utils import best_PSNR
+from n2v.utils.evaluation_utils import best_PSNR, PSNR
 
 import subprocess
 
@@ -30,11 +30,11 @@ def load_data(path, key="x_train"):
     else:
         raise NotImplementedError("File-format not supported.")
     
-def compute_best_psnrs(input_data, gt_data):
+def compute_best_psnrs(model, input_data, gt_data, fun):
     psnrs = []
-    for img, gt in zip(test_input, test_gt):
+    for img, gt in zip(input_data, gt_data):
         pred = model.predict(img.astype(np.float32), "YXC", tta=False)
-        psnrs.append(best_PSNR(gt, img, gt.max() - gt.min()))
+        psnrs.append(fun(gt, pred, gt.max() - gt.min()))
     
     return np.array(psnrs)
 
@@ -77,21 +77,25 @@ if __name__ == '__main__':
     history = model.train(X, X_val)
     
     model.load_weights("weights_best.h5")
-    best_psnrs = compute_best_psnrs(test_input, test_gt)
+    bestPSNR_wbest = compute_best_psnrs(model, test_input, test_gt, fun=best_PSNR)
+    PSNR_wbest = compute_best_psnrs(model, test_input, test_gt, fun=PSNR)
     
     model.load_weights("weights_last.h5")
-    last_psnrs = compute_best_psnrs(test_input, test_gt)
+    bestPSNR_wlast = compute_best_psnrs(model, test_input, test_gt, fun=best_PSNR)
+    PSNR_wlast = compute_best_psnrs(model, test_input, test_gt, fun=PSNR)
     
     with open(join(config["expdir"], "results.csv"), "w") as f:
-        f.write("best_psnr, last_psnr\n")
-        for best, last in zip(best_psnrs, last_psnrs):
-            f.write(f"{best}, {last}\n")
+        f.write("bestPSNR_wbest, bestPSNR_wlast, PSNR_wbest, PSNR_wlast\n")
+        for best_wbest, best_wlast, wbest, wlast in zip(bestPSNR_wbest, bestPSNR_wlast, PSNR_wbest, PSNR_wlast):
+            f.write(f"{best_wbest}, {best_wlast}, {wbest}, {wlast}\n")
             
     if use_wandb:
         wandb.log(
             {
-                "best_avg_psnr": np.mean(best_psnrs),
-                "last_avg_psnr": np.mean(last_psnrs)
+                "bestPSNR_wbest": np.mean(bestPSNR_wbest),
+                "bestPSNR_wlast": np.mean(bestPSNR_wlast),
+                "PSNR_wbest": np.mean(PSNR_wbest),
+                "PSNR_wlast": np.mean(PSNR_wlast)
             }
         )
     
