@@ -10,7 +10,6 @@
 |[Mouse_sp12_n2v_baseline_slurm](./experiments/Mouse_sp12_n2v_baseline_slurm)| 22.96 | 22.95 | 32.66 | 33.42 | uniform_withoutCP |
 |[Mouse_sp3_n2v_baseline_slurm](./experiments/Mouse_sp3_n2v_baseline_slurm)| 30.31 | 30.42 | 34.65 | 34.75 | uniform_withoutCP |
 |[Mouse_sp6_n2v_baseline_slurm](./experiments/Mouse_sp6_n2v_baseline_slurm)| 27.27 | 27.25 | 34.38 | 34.42 | uniform_withoutCP |
-
 |[Convallaria_n2v_zeiss_mean](experiments/Convallaria_n2v_zeiss_mean)                | 22.258734 |       22.282437 |       25.522387 |       25.435619 ||
 |[Convallaria_n2v_zeiss_mean_bp_sk](experiments/Convallaria_n2v_zeiss_mean_bp_sk)    | 20.853632 |       19.941455 |       23.890234 |       23.700333 ||
 |[Convallaria_n2v_zeiss_median](experiments/Convallaria_n2v_zeiss_median)            | 27.442528 |       27.872378 |       28.409888 |       28.890761 ||
