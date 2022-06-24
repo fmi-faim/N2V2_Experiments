@@ -34,3 +34,9 @@
 |[Mouse_sp3_n2v_zeiss_median_bp_sk](experiments/Mouse_sp3_n2v_zeiss_median_bp_sk)    | 30.902534 |       30.720023 |       35.763712 |       35.823552 ||
 |[Mouse_sp6_n2v_zeiss_mean_bp_sk](experiments/Mouse_sp6_n2v_zeiss_mean_bp_sk)        | 27.266872 |       27.649582 |       34.917322 |       34.953092 ||
 |[Mouse_sp6_n2v_zeiss_median_bp_sk](experiments/Mouse_sp6_n2v_zeiss_median_bp_sk)    | 27.237407 |       27.434635 |       35.267758 |       35.489634 ||
+|[Convallaria_n2v_zeiss_baseline](experiments/Convallaria_n2v_zeiss_baseline)           | 29.110 |          29.084 |          29.148 |          29.107 ||
+|[Flywing_g70_n2v_zeiss_baseline](experiments/Flywing_g70_n2v_zeiss_baseline)           | 25.078 |          25.131 |          25.105 |          25.160 ||
+|[Mouse_g20_n2v_zeiss_baseline](experiments/Mouse_g20_n2v_zeiss_baseline)               | 34.021 |          34.051 |          34.030 |          34.060 ||
+|[Mouse_sp12_n2v_zeiss_baseline](experiments/Mouse_sp12_n2v_zeiss_baseline)             | 22.749 |          22.868 |          32.741 |          32.812 ||
+|[Mouse_sp3_n2v_zeiss_baseline](experiments/Mouse_sp3_n2v_zeiss_baseline)               | 30.161 |          30.525 |          34.859 |          34.924 ||
+|[Mouse_sp6_n2v_zeiss_baseline](experiments/Mouse_sp6_n2v_zeiss_baseline)               | 27.292 |          27.225 |          34.067 |          34.040 ||

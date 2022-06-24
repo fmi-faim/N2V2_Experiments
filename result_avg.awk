@@ -16,6 +16,6 @@ END {
         printf "%16s |", names[srt[i]]
     print ""
     for (i=1; i<=NF; i++)
-        printf "%16f |", res[srt[i]]/(NR-1)
+        printf "%16.3f |", res[srt[i]]/(NR-1)
     print ""
 }
