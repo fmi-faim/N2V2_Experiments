@@ -52,3 +52,8 @@
 |[Mouse_sp6_n2v_zeiss_mean_bp_sk](experiments/Mouse_sp6_n2v_zeiss_mean_bp_sk)           | 26.998 |          27.063 |          32.860 |          33.098 ||
 |[Mouse_sp6_n2v_zeiss_median](experiments/Mouse_sp6_n2v_zeiss_median)                   | 27.310 |          27.066 |          33.379 |          33.882 ||
 |[Mouse_sp6_n2v_zeiss_median_bp_sk](experiments/Mouse_sp6_n2v_zeiss_median_bp_sk)       | 27.372 |          26.943 |          33.178 |          33.211 ||
+|[Mouse_sp12_n2v_zeiss_baseline_shallow](experiments/Mouse_sp12_n2v_zeiss_baseline_shallow)         | 22.876 |          22.910 |          33.140 |          33.368 ||
+|[Mouse_sp12_n2v_zeiss_mean_bp_sk_shallow](experiments/Mouse_sp12_n2v_zeiss_mean_bp_sk_shallow)     | 22.735 |          23.017 |          31.922 |          32.200 ||
+|[Mouse_sp12_n2v_zeiss_mean_shallow](experiments/Mouse_sp12_n2v_zeiss_mean_shallow)                 | 22.870 |          23.109 |          32.481 |          32.822 ||
+|[Mouse_sp12_n2v_zeiss_median_bp_sk_shallow](experiments/Mouse_sp12_n2v_zeiss_median_bp_sk_shallow) | 21.112 |          20.896 |          23.801 |          23.761 ||
+|[Mouse_sp12_n2v_zeiss_median_shallow](experiments/Mouse_sp12_n2v_zeiss_median_shallow)             | 22.877 |          22.804 |          32.944 |          33.036 ||
