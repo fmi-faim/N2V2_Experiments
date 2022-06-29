@@ -1,5 +1,7 @@
 # Experiments Overview
 
+## Baselines
+
 | Name | PSNR_wbest | PSNR_wlast | bestPSNR_wbest | bestPSNR_wlast | Replacement |
 |------|------------|------------|----------------|----------------|-------------|
 |[BSD68_reproducibility_slurm](./experiments/BSD68_reproducibility_slurm)| 26.76 | 27.00 | 26.86 | 27.00 | uniform_withCP |
@@ -16,10 +18,10 @@
 |[Mouse_sp3_n2v_zeiss_baseline](experiments/Mouse_sp3_n2v_zeiss_baseline)               | 30.161 |          30.525 |          34.859 |          34.924 ||
 |[Mouse_sp6_n2v_zeiss_baseline](experiments/Mouse_sp6_n2v_zeiss_baseline)               | 27.292 |          27.225 |          34.067 |          34.040 ||
 |[Convallaria_n2v_zeiss_baseline](experiments/Convallaria_n2v_zeiss_baseline)           | 35.700 |          35.666 |          35.738 |          35.688 ||
-|[Convallaria_n2v_zeiss_mean](experiments/Convallaria_n2v_zeiss_mean)                   | 28.730 |          28.703 |          30.610 |          30.602 ||
-|[Convallaria_n2v_zeiss_mean_bp_sk](experiments/Convallaria_n2v_zeiss_mean_bp_sk)       | 36.327 |          36.230 |          36.380 |          36.367 ||
-|[Convallaria_n2v_zeiss_median](experiments/Convallaria_n2v_zeiss_median)               | 33.927 |          34.025 |          34.332 |          34.390 ||
-|[Convallaria_n2v_zeiss_median_bp_sk](experiments/Convallaria_n2v_zeiss_median_bp_sk)   | 36.378 |          36.314 |          36.410 |          36.492 ||
+
+# No shift and `unet_residuals=false`
+| Name | PSNR_wbest | PSNR_wlast | bestPSNR_wbest | bestPSNR_wlast | Replacement |
+|------|------------|------------|----------------|----------------|-------------|
 |[Convallaria_n2v_zeiss_baseline](experiments/Convallaria_n2v_zeiss_baseline)           | 34.831 |          34.813 |          34.851 |          34.852 ||
 |[Convallaria_n2v_zeiss_mean](experiments/Convallaria_n2v_zeiss_mean)                   | 35.287 |          35.270 |          35.311 |          35.332 ||
 |[Convallaria_n2v_zeiss_mean_bp_sk](experiments/Convallaria_n2v_zeiss_mean_bp_sk)       | 34.589 |          34.597 |          34.638 |          34.660 ||
