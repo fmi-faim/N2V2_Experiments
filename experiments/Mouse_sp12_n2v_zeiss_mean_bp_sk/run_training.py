@@ -14,6 +14,7 @@ from n2v.utils.evaluation_utils import best_PSNR, PSNR
 import subprocess
 
 import matplotlib.pyplot as plt
+from skimage.io import imsave
 
 
 def load_data(path, key="x_train"):
@@ -38,6 +39,10 @@ def save_img(n, img, gt, pred, out_dir):
     img_dir = join(config["expdir"], out_dir)
     if not exists(img_dir):
         os.makedirs(img_dir)
+
+    img_pred = pred.squeeze().clip(0, 255).astype(np.uint8)
+    imsave(join(config["expdir"], out_dir, f"pred_{n:03}.tif"), img_pred)
+
     plt.figure(figsize=(16, 8))
     plt.subplot(1, 3, 1)
     plt.title("gt")
