@@ -40,7 +40,10 @@ def save_img(n, img, gt, pred, out_dir):
     if not exists(img_dir):
         os.makedirs(img_dir)
 
-    img_pred = pred.squeeze().clip(0, 255).astype(np.uint8)
+    if gt.max() > 255:
+        img_pred = pred.squeeze().clip(0, 65536).astype(np.uint16)
+    else:
+        img_pred = pred.squeeze().clip(0, 255).astype(np.uint8)
     imsave(join(config["expdir"], out_dir, f"pred_{n:03}.tif"), img_pred)
 
     plt.figure(figsize=(16, 8))
