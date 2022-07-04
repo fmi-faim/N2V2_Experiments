@@ -5,7 +5,8 @@
 |------|------------|------------|----------------|----------------|-------------|
 |[BSD68_reproducibility_slurm](./experiments/BSD68_reproducibility_slurm)            |   26.84   |   26.97   | 26.88 | 26.97 | uniform_withCP |
 |[BSD68_reproducibility_slurm-run1](./experiments/BSD68_reproducibility_slurm-run1)  |   26.95   |   26.99   | 26.99 | 27.00 | uniform_withCP | 
-|[BSD68_sbp_slurm](./experiments/BSD68_sbp_slurm)                                    | __26.98__ | __27.30__ | __27.09__ | __27.30__ | uniform_withCP |
+|[BSD68_reproducibility_slurm_mean_bp_sk](./experiments/BSD68_reproducibility_slurm_mean_bp_sk) | __26.83__ | __27.59__ | __27.34__ | __27.61__ | mean |
+|[BSD68_sbp_slurm](./experiments/BSD68_sbp_slurm)                                    | 27.09 | 27.30 | 27.16 | 27.31 | uniform_withCP |
 |[BSD68_sbp_uniform_withoutCP_slurm](./experiments/BSD68_sbp_uniform_withoutCP_slurm)|   26.76   |   27.24   | 26.90 | 27.25 | uniform_withoutCP |
 |[BSD68_uniform_withoutCP_slurm](./experiments/BSD68_uniform_withoutCP_slurm)        |   25.33   |   26.64   | 25.39 | 26.64 | uniform_withoutCP |
 
@@ -23,6 +24,7 @@
 | Name | PSNR_wbest | PSNR_wlast | bestPSNR_wbest | bestPSNR_wlast | Replacement |
 |------|------------|------------|----------------|----------------|-------------|
 |[Flywing_g70_n2v_baseline_slurm](./experiments/Flywing_g70_n2v_baseline_slurm)                    | 25.04 | 25.00 | 25.07 | 25.04 | uniform_withoutCP |
+|[Flywing_g70_n2v_sbp_identity_slurm](./experiments/Flywing_g70_n2v_sbp_identity_slurm)            | 11.23 | 11.23 | 17.68 | 17.68 | identity |
 |[Flywing_g70_n2v_sbp_slurm](./experiments/Flywing_g70_n2v_sbp_slurm)                              | __25.44__ | __25.45__ | __25.47__ | __25.49__ | uniform_withoutCP |
 |[Flywing_g70_n2v_sbp_uniform_withCP_slurm](./experiments/Flywing_g70_n2v_sbp_uniform_withCP_slurm)| 25.38 | 25.38 | 25.41 | 25.42 | uniform_withCP |
 |[Flywing_g70_n2v_uniform_withCP_slurm](./experiments/Flywing_g70_n2v_uniform_withCP_slurm)        | 25.16 | 25.17 | 25.19 | 25.20 | uniform_withCP |
