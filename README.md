@@ -56,3 +56,8 @@
 |[Mouse_sp6_n2v_zeiss_mean_bp_sk](experiments/Mouse_sp6_n2v_zeiss_mean_bp_sk)                       | 27.896 |          27.582 |          34.893 |          35.009 ||
 |[Mouse_sp6_n2v_zeiss_median](experiments/Mouse_sp6_n2v_zeiss_median)                               | 26.814 |          27.355 |          34.858 |          35.066 ||
 |[Mouse_sp6_n2v_zeiss_median_bp_sk](experiments/Mouse_sp6_n2v_zeiss_median_bp_sk)                   | 27.348 |          27.529 |          35.476 |          35.496 ||
+|[Convallaria_v1_n2v_zeiss_baseline](experiments/Convallaria_v1_n2v_zeiss_baseline)                 | 30.764 |          31.235 |          31.094 |          31.266 ||
+|[Convallaria_v1_n2v_zeiss_mean](experiments/Convallaria_v1_n2v_zeiss_mean)                         | 30.772 |          31.681 |          31.375 |          31.838 ||
+|[Convallaria_v1_n2v_zeiss_mean_bp_sk](experiments/Convallaria_v1_n2v_zeiss_mean_bp_sk)             | 28.096 |          31.286 |          28.449 |          31.357 ||
+|[Convallaria_v1_n2v_zeiss_median](experiments/Convallaria_v1_n2v_zeiss_median)                     | 30.951 |          31.585 |          31.519 |          31.766 ||
+|[Convallaria_v1_n2v_zeiss_median_bp_sk](experiments/Convallaria_v1_n2v_zeiss_median_bp_sk)         | 30.550 |          31.252 |          30.995 |          31.284 ||
