@@ -12,53 +12,47 @@
 |[Mouse_sp12_n2v_baseline_slurm](./experiments/Mouse_sp12_n2v_baseline_slurm)| 22.96 | 22.95 | 32.66 | 33.42 | uniform_withoutCP |
 |[Mouse_sp3_n2v_baseline_slurm](./experiments/Mouse_sp3_n2v_baseline_slurm)| 30.31 | 30.42 | 34.65 | 34.75 | uniform_withoutCP |
 |[Mouse_sp6_n2v_baseline_slurm](./experiments/Mouse_sp6_n2v_baseline_slurm)| 27.27 | 27.25 | 34.38 | 34.42 | uniform_withoutCP |
-|[Flywing_g70_n2v_zeiss_baseline](experiments/Flywing_g70_n2v_zeiss_baseline)           | 25.078 |          25.131 |          25.105 |          25.160 ||
-|[Mouse_g20_n2v_zeiss_baseline](experiments/Mouse_g20_n2v_zeiss_baseline)               | 34.021 |          34.051 |          34.030 |          34.060 ||
-|[Mouse_sp12_n2v_zeiss_baseline](experiments/Mouse_sp12_n2v_zeiss_baseline)             | 22.749 |          22.868 |          32.741 |          32.812 ||
-|[Mouse_sp3_n2v_zeiss_baseline](experiments/Mouse_sp3_n2v_zeiss_baseline)               | 30.161 |          30.525 |          34.859 |          34.924 ||
-|[Mouse_sp6_n2v_zeiss_baseline](experiments/Mouse_sp6_n2v_zeiss_baseline)               | 27.292 |          27.225 |          34.067 |          34.040 ||
-|[Convallaria_n2v_zeiss_baseline](experiments/Convallaria_n2v_zeiss_baseline)           | 35.700 |          35.666 |          35.738 |          35.688 ||
 
-# No shift and `unet_residuals=false`
+## Results `mean_median_uniformWOcp_v1_noshift_v2.patch`
 | Name | PSNR_wbest | PSNR_wlast | bestPSNR_wbest | bestPSNR_wlast | Replacement |
 |------|------------|------------|----------------|----------------|-------------|
-|[Convallaria_n2v_zeiss_baseline](experiments/Convallaria_n2v_zeiss_baseline)           | 34.831 |          34.813 |          34.851 |          34.852 ||
-|[Convallaria_n2v_zeiss_mean](experiments/Convallaria_n2v_zeiss_mean)                   | 35.287 |          35.270 |          35.311 |          35.332 ||
-|[Convallaria_n2v_zeiss_mean_bp_sk](experiments/Convallaria_n2v_zeiss_mean_bp_sk)       | 34.589 |          34.597 |          34.638 |          34.660 ||
-|[Convallaria_n2v_zeiss_median](experiments/Convallaria_n2v_zeiss_median)               | 35.460 |          35.489 |          35.498 |          35.519 ||
-|[Convallaria_n2v_zeiss_median_bp_sk](experiments/Convallaria_n2v_zeiss_median_bp_sk)   | 34.547 |          34.554 |          34.591 |          34.591 ||
-|[Flywing_g70_n2v_zeiss_baseline](experiments/Flywing_g70_n2v_zeiss_baseline)           | 25.043 |          25.077 |          25.074 |          25.105 ||
-|[Flywing_g70_n2v_zeiss_mean](experiments/Flywing_g70_n2v_zeiss_mean)                   | 25.359 |          25.359 |          25.413 |          25.413 ||
-|[Flywing_g70_n2v_zeiss_mean_bp_sk](experiments/Flywing_g70_n2v_zeiss_mean_bp_sk)       | 25.268 |          25.283 |          25.318 |          25.332 ||
-|[Flywing_g70_n2v_zeiss_median](experiments/Flywing_g70_n2v_zeiss_median)               | 25.426 |          25.458 |          25.474 |          25.515 ||
-|[Flywing_g70_n2v_zeiss_median_bp_sk](experiments/Flywing_g70_n2v_zeiss_median_bp_sk)   | 25.373 |          25.390 |          25.415 |          25.430 ||
-|[Mouse_g20_n2v_zeiss_baseline](experiments/Mouse_g20_n2v_zeiss_baseline)               | 33.225 |          33.295 |          33.261 |          33.316 ||
-|[Mouse_g20_n2v_zeiss_mean](experiments/Mouse_g20_n2v_zeiss_mean)                       | 33.560 |          33.582 |          33.646 |          33.670 ||
-|[Mouse_g20_n2v_zeiss_mean_bp_sk](experiments/Mouse_g20_n2v_zeiss_mean_bp_sk)           | 32.821 |          32.997 |          33.031 |          33.056 ||
-|[Mouse_g20_n2v_zeiss_median](experiments/Mouse_g20_n2v_zeiss_median)                   | 33.520 |          33.613 |          33.588 |          33.659 ||
-|[Mouse_g20_n2v_zeiss_median_bp_sk](experiments/Mouse_g20_n2v_zeiss_median_bp_sk)       | 33.000 |          33.033 |          33.039 |          33.070 ||
-|[Mouse_sp12_n2v_zeiss_baseline](experiments/Mouse_sp12_n2v_zeiss_baseline)             | 22.987 |          22.925 |          33.449 |          33.471 ||
-|[Mouse_sp12_n2v_zeiss_mean](experiments/Mouse_sp12_n2v_zeiss_mean)                     | 23.215 |          23.078 |          32.697 |          32.866 ||
-|[Mouse_sp12_n2v_zeiss_mean_bp_sk](experiments/Mouse_sp12_n2v_zeiss_mean_bp_sk)         | 22.984 |          22.961 |          32.083 |          32.360 ||
-|[Mouse_sp12_n2v_zeiss_median](experiments/Mouse_sp12_n2v_zeiss_median)                 | 23.167 |          22.852 |          32.750 |          33.073 ||
-|[Mouse_sp12_n2v_zeiss_median_bp_sk](experiments/Mouse_sp12_n2v_zeiss_median_bp_sk)     | 22.685 |          22.658 |          31.722 |          32.066 ||
-|[Mouse_sp3_n2v_zeiss_baseline](experiments/Mouse_sp3_n2v_zeiss_baseline)               | 29.840 |          30.171 |          34.371 |          34.470 ||
-|[Mouse_sp3_n2v_zeiss_mean](experiments/Mouse_sp3_n2v_zeiss_mean)                       | 29.458 |          29.912 |          33.795 |          33.792 ||
-|[Mouse_sp3_n2v_zeiss_mean_bp_sk](experiments/Mouse_sp3_n2v_zeiss_mean_bp_sk)           | 29.957 |          29.884 |          33.313 |          33.485 ||
-|[Mouse_sp3_n2v_zeiss_median](experiments/Mouse_sp3_n2v_zeiss_median)                   | 30.198 |          30.221 |          34.691 |          34.742 ||
-|[Mouse_sp3_n2v_zeiss_median_bp_sk](experiments/Mouse_sp3_n2v_zeiss_median_bp_sk)       | 29.855 |          29.752 |          33.493 |          33.504 ||
-|[Mouse_sp6_n2v_zeiss_baseline](experiments/Mouse_sp6_n2v_zeiss_baseline)               | 26.804 |          27.104 |          33.663 |          34.079 ||
-|[Mouse_sp6_n2v_zeiss_mean](experiments/Mouse_sp6_n2v_zeiss_mean)                       | 26.612 |          27.408 |          33.652 |          34.041 ||
-|[Mouse_sp6_n2v_zeiss_mean_bp_sk](experiments/Mouse_sp6_n2v_zeiss_mean_bp_sk)           | 26.998 |          27.063 |          32.860 |          33.098 ||
-|[Mouse_sp6_n2v_zeiss_median](experiments/Mouse_sp6_n2v_zeiss_median)                   | 27.310 |          27.066 |          33.379 |          33.882 ||
-|[Mouse_sp6_n2v_zeiss_median_bp_sk](experiments/Mouse_sp6_n2v_zeiss_median_bp_sk)       | 27.372 |          26.943 |          33.178 |          33.211 ||
-|[BSD68_reproducibility_zeiss_baseline](experiments/BSD68_reproducibility_zeiss_baseline)           | 26.815 |          26.900 |          26.857 |          26.904 ||
-|[BSD68_reproducibility_zeiss_mean](experiments/BSD68_reproducibility_zeiss_mean)                   | 26.060 |          27.417 |          26.404 |          27.431 ||
-|[BSD68_reproducibility_zeiss_mean_bp_sk](experiments/BSD68_reproducibility_zeiss_mean_bp_sk)       | 26.027 |          27.337 |          26.278 |          27.356 ||
-|[BSD68_reproducibility_zeiss_median](experiments/BSD68_reproducibility_zeiss_median)               | 26.703 |          26.798 |          26.714 |          26.803 ||
-|[BSD68_reproducibility_zeiss_median_bp_sk](experiments/BSD68_reproducibility_zeiss_median_bp_sk)   | 26.846 |          27.436 |          26.938 |          27.453 ||
-|[Mouse_sp12_n2v_zeiss_baseline_shallow](experiments/Mouse_sp12_n2v_zeiss_baseline_shallow)         | 22.876 |          22.910 |          33.140 |          33.368 ||
-|[Mouse_sp12_n2v_zeiss_mean_bp_sk_shallow](experiments/Mouse_sp12_n2v_zeiss_mean_bp_sk_shallow)     | 22.735 |          23.017 |          31.922 |          32.200 ||
-|[Mouse_sp12_n2v_zeiss_mean_shallow](experiments/Mouse_sp12_n2v_zeiss_mean_shallow)                 | 22.870 |          23.109 |          32.481 |          32.822 ||
-|[Mouse_sp12_n2v_zeiss_median_bp_sk_shallow](experiments/Mouse_sp12_n2v_zeiss_median_bp_sk_shallow) | 21.112 |          20.896 |          23.801 |          23.761 ||
-|[Mouse_sp12_n2v_zeiss_median_shallow](experiments/Mouse_sp12_n2v_zeiss_median_shallow)             | 22.877 |          22.804 |          32.944 |          33.036 ||
+|[BSD68_reproducibility_zeiss_baseline](experiments/BSD68_reproducibility_zeiss_baseline)           | 26.664 |          26.944 |          26.715 |          26.946 ||
+|[BSD68_reproducibility_zeiss_mean](experiments/BSD68_reproducibility_zeiss_mean)                   | 26.990 |          27.491 |          27.179 |          27.520 ||
+|[BSD68_reproducibility_zeiss_mean_bp_sk](experiments/BSD68_reproducibility_zeiss_mean_bp_sk)       | 26.990 |          27.561 |          27.155 |          27.580 ||
+|[BSD68_reproducibility_zeiss_median](experiments/BSD68_reproducibility_zeiss_median)               | 26.670 |          26.760 |          26.717 |          26.766 ||
+|[BSD68_reproducibility_zeiss_median_bp_sk](experiments/BSD68_reproducibility_zeiss_median_bp_sk)   | 26.961 |          27.584 |          27.075 |          27.595 ||
+|[Convallaria_n2v_zeiss_baseline](experiments/Convallaria_n2v_zeiss_baseline)                       | 35.734 |          35.729 |          35.750 |          35.758 ||
+|[Convallaria_n2v_zeiss_mean](experiments/Convallaria_n2v_zeiss_mean)                               | 35.570 |          35.572 |          35.997 |          35.900 ||
+|[Convallaria_n2v_zeiss_mean_bp_sk](experiments/Convallaria_n2v_zeiss_mean_bp_sk)                   | 36.045 |          36.150 |          36.198 |          36.271 ||
+|[Convallaria_n2v_zeiss_median](experiments/Convallaria_n2v_zeiss_median)                           | 36.100 |          36.228 |          36.416 |          36.391 ||
+|[Convallaria_n2v_zeiss_median_bp_sk](experiments/Convallaria_n2v_zeiss_median_bp_sk)               | 36.304 |          36.252 |          36.337 |          36.362 ||
+|[Flywing_g70_n2v_zeiss_baseline](experiments/Flywing_g70_n2v_zeiss_baseline)                       | 25.125 |          25.213 |          25.156 |          25.242 ||
+|[Flywing_g70_n2v_zeiss_mean](experiments/Flywing_g70_n2v_zeiss_mean)                               | 25.435 |          25.453 |          25.499 |          25.536 ||
+|[Flywing_g70_n2v_zeiss_mean_bp_sk](experiments/Flywing_g70_n2v_zeiss_mean_bp_sk)                   | 25.402 |          25.439 |          25.460 |          25.478 ||
+|[Flywing_g70_n2v_zeiss_median](experiments/Flywing_g70_n2v_zeiss_median)                           | 25.490 |          25.500 |          25.568 |          25.569 ||
+|[Flywing_g70_n2v_zeiss_median_bp_sk](experiments/Flywing_g70_n2v_zeiss_median_bp_sk)               | 25.406 |          25.408 |          25.458 |          25.458 ||
+|[Mouse_g20_n2v_zeiss_baseline](experiments/Mouse_g20_n2v_zeiss_baseline)                           | 34.165 |          34.183 |          34.172 |          34.196 ||
+|[Mouse_g20_n2v_zeiss_mean](experiments/Mouse_g20_n2v_zeiss_mean)                                   | 33.923 |          34.390 |          34.410 |          34.493 ||
+|[Mouse_g20_n2v_zeiss_mean_bp_sk](experiments/Mouse_g20_n2v_zeiss_mean_bp_sk)                       | 34.316 |          34.487 |          34.498 |          34.607 ||
+|[Mouse_g20_n2v_zeiss_median](experiments/Mouse_g20_n2v_zeiss_median)                               | 34.273 |          34.258 |          34.412 |          34.410 ||
+|[Mouse_g20_n2v_zeiss_median_bp_sk](experiments/Mouse_g20_n2v_zeiss_median_bp_sk)                   | 34.202 |          34.637 |          34.414 |          34.736 ||
+|[Mouse_sp12_n2v_zeiss_baseline](experiments/Mouse_sp12_n2v_zeiss_baseline)                         | 23.195 |          22.984 |          33.834 |          34.121 ||
+|[Mouse_sp12_n2v_zeiss_baseline_shallow](experiments/Mouse_sp12_n2v_zeiss_baseline_shallow)         | 23.012 |          23.046 |          33.974 |          34.010 ||
+|[Mouse_sp12_n2v_zeiss_mean](experiments/Mouse_sp12_n2v_zeiss_mean)                                 | 23.678 |          23.248 |          33.872 |          33.659 ||
+|[Mouse_sp12_n2v_zeiss_mean_bp_sk](experiments/Mouse_sp12_n2v_zeiss_mean_bp_sk)                     | 22.522 |          23.184 |          32.911 |          34.167 ||
+|[Mouse_sp12_n2v_zeiss_mean_bp_sk_shallow](experiments/Mouse_sp12_n2v_zeiss_mean_bp_sk_shallow)     | 23.168 |          23.217 |          33.908 |          33.903 ||
+|[Mouse_sp12_n2v_zeiss_mean_shallow](experiments/Mouse_sp12_n2v_zeiss_mean_shallow)                 | 23.296 |          23.213 |          33.124 |          33.259 ||
+|[Mouse_sp12_n2v_zeiss_median](experiments/Mouse_sp12_n2v_zeiss_median)                             | 23.018 |          22.919 |          33.571 |          33.454 ||
+|[Mouse_sp12_n2v_zeiss_median_bp_sk](experiments/Mouse_sp12_n2v_zeiss_median_bp_sk)                 | 23.465 |          22.997 |          34.389 |          34.540 ||
+|[Mouse_sp12_n2v_zeiss_median_bp_sk_shallow](experiments/Mouse_sp12_n2v_zeiss_median_bp_sk_shallow) | 23.343 |          22.983 |          33.824 |          33.882 ||
+|[Mouse_sp12_n2v_zeiss_median_shallow](experiments/Mouse_sp12_n2v_zeiss_median_shallow)             | 22.880 |          22.880 |          32.986 |          32.981 ||
+|[Mouse_sp3_n2v_zeiss_baseline](experiments/Mouse_sp3_n2v_zeiss_baseline)                           | 30.441 |          30.630 |          35.383 |          35.444 ||
+|[Mouse_sp3_n2v_zeiss_mean](experiments/Mouse_sp3_n2v_zeiss_mean)                                   | 30.745 |          30.663 |          35.270 |          35.290 ||
+|[Mouse_sp3_n2v_zeiss_mean_bp_sk](experiments/Mouse_sp3_n2v_zeiss_mean_bp_sk)                       | 31.117 |          30.808 |          34.997 |          35.506 ||
+|[Mouse_sp3_n2v_zeiss_median](experiments/Mouse_sp3_n2v_zeiss_median)                               | 30.473 |          30.394 |          35.254 |          35.228 ||
+|[Mouse_sp3_n2v_zeiss_median_bp_sk](experiments/Mouse_sp3_n2v_zeiss_median_bp_sk)                   | 29.681 |          30.746 |          35.069 |          35.809 ||
+|[Mouse_sp6_n2v_zeiss_baseline](experiments/Mouse_sp6_n2v_zeiss_baseline)                           | 27.538 |          27.411 |          34.809 |          34.890 ||
+|[Mouse_sp6_n2v_zeiss_mean](experiments/Mouse_sp6_n2v_zeiss_mean)                                   | 27.454 |          27.498 |          34.633 |          34.710 ||
+|[Mouse_sp6_n2v_zeiss_mean_bp_sk](experiments/Mouse_sp6_n2v_zeiss_mean_bp_sk)                       | 27.896 |          27.582 |          34.893 |          35.009 ||
+|[Mouse_sp6_n2v_zeiss_median](experiments/Mouse_sp6_n2v_zeiss_median)                               | 26.814 |          27.355 |          34.858 |          35.066 ||
+|[Mouse_sp6_n2v_zeiss_median_bp_sk](experiments/Mouse_sp6_n2v_zeiss_median_bp_sk)                   | 27.348 |          27.529 |          35.476 |          35.496 ||
