@@ -10,6 +10,7 @@ import numpy as np
 from n2v.utils.n2v_utils import manipulate_val_data
 from n2v.internals.N2V_DataGenerator import N2V_DataGenerator
 from n2v.utils.evaluation_utils import best_PSNR, PSNR
+from csbdeep.utils.utils import normalize_minmse
 
 import subprocess
 
@@ -42,9 +43,12 @@ def save_img(n, img, gt, pred, out_dir):
 
     if gt.max() > 255:
         img_pred = pred.squeeze().clip(0, 65536).astype(np.uint16)
+        img_gt = gt.squeeze().clip(0, 65536).astype(np.uint16)
     else:
         img_pred = pred.squeeze().clip(0, 255).astype(np.uint8)
+        img_gt = gt.squeeze().clip(0, 255).astype(np.uint8)
     imsave(join(config["expdir"], out_dir, f"pred_{n:03}.tif"), img_pred)
+    imsave(join(config["expdir"], out_dir, f"gt_{n:03}.tif"), img_gt)
 
     plt.figure(figsize=(16, 8))
     plt.subplot(1, 3, 1)
@@ -57,6 +61,19 @@ def save_img(n, img, gt, pred, out_dir):
     plt.title("pred")
     plt.imshow(pred)
     plt.savefig(join(config["expdir"], out_dir, f"{n:03}.jpg"))
+    plt.close()
+
+    img_n = normalize_minmse(img, gt)
+    plt.figure(figsize=(16, 8))
+    plt.subplot(1, 2, 1)
+    plt.title("gt - img_n")
+    plt.imshow(gt - img_n)
+    plt.colorbar()
+    plt.subplot(1, 2, 2)
+    plt.title("square(gt - img_n)")
+    plt.imshow(np.square(gt - img_n))
+    plt.colorbar()
+    plt.savefig(join(config["expdir"], out_dir, f"diff_{n:03}.jpg"))
     plt.close()
 
 def compute_best_psnrs(model, input_data, gt_data, fun):
