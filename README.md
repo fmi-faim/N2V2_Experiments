@@ -20,6 +20,17 @@
 |[Convallaria_n2v_uniform_withCP_slurm](./experiments/Convallaria_n2v_uniform_withCP_slurm)        | 35.85 | 35.87 | 35.86 | 35.89 | uniform_withCP |
 
 
+## Convallaria_v1
+| Name | PSNR_wbest | PSNR_wlast | bestPSNR_wbest | bestPSNR_wlast | Replacement |
+|------|------------|------------|----------------|----------------|-------------| 
+|[Convallaria_v1_n2v_baseline_slurm](./experiments/Convallaria_v1_n2v_baseline_slurm)                    | 31.09 | 31.22 | 31.27 | 31.24 | uniform_withoutCP |
+|[Convallaria_v1_n2v_sbp_slurm](./experiments/Convallaria_v1_n2v_sbp_slurm)                              | 29.00 | __31.47__ | 30.38 | __31.51__ | uniform_withoutCP |
+|[Convallaria_v1_n2v_sbp_uniform_withCP_slurm](./experiments/Convallaria_v1_n2v_sbp_uniform_withCP_slurm)| 27.36 | 31.43 | 29.66 | 31.45 | uniform_withCP |
+|[Convallaria_v1_n2v_uniform_withCP_slurm](./experiments/Convallaria_v1_n2v_uniform_withCP_slurm)        | __31.56__ | 31.41 | __31.85__ | 31.43 | uniform_withCP |
+|[Convallaria_v1_slurm_mean_bp_sk](./experiments/Convallaria_v1_slurm_mean_bp_sk)                        | 29.64 | 31.42 | 30.38 | 31.48 | mean |
+|[Convallaria_v1_slurm_median_bp_sk](./experiments/Convallaria_v1_slurm_median_bp_sk)                    | 29.10 | 31.40 | 30.18 | 31.44 | median |
+
+
 ## Flywing
 | Name | PSNR_wbest | PSNR_wlast | bestPSNR_wbest | bestPSNR_wlast | Replacement |
 |------|------------|------------|----------------|----------------|-------------|
