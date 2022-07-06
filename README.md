@@ -1,14 +1,15 @@
 # Experiments Overview
 
 ## BSD68
+__Note:__ Shown PSNR values are computed with a fixed intensity range of 255.0.
 | Name | PSNR_wbest | PSNR_wlast | bestPSNR_wbest | bestPSNR_wlast | Replacement |
 |------|------------|------------|----------------|----------------|-------------|
-|[BSD68_reproducibility_slurm](./experiments/BSD68_reproducibility_slurm)            |   26.84   |   26.97   | 26.88 | 26.97 | uniform_withCP |
-|[BSD68_reproducibility_slurm-run1](./experiments/BSD68_reproducibility_slurm-run1)  |   26.95   |   26.99   | 26.99 | 27.00 | uniform_withCP | 
-|[BSD68_reproducibility_slurm_mean_bp_sk](./experiments/BSD68_reproducibility_slurm_mean_bp_sk) | __26.83__ | __27.59__ | __27.34__ | __27.61__ | mean |
-|[BSD68_sbp_slurm](./experiments/BSD68_sbp_slurm)                                    | 27.09 | 27.30 | 27.16 | 27.31 | uniform_withCP |
-|[BSD68_sbp_uniform_withoutCP_slurm](./experiments/BSD68_sbp_uniform_withoutCP_slurm)|   26.76   |   27.24   | 26.90 | 27.25 | uniform_withoutCP |
-|[BSD68_uniform_withoutCP_slurm](./experiments/BSD68_uniform_withoutCP_slurm)        |   25.33   |   26.64   | 25.39 | 26.64 | uniform_withoutCP |
+|[BSD68_reproducibility_slurm](./experiments/BSD68_reproducibility_slurm/results_255_avg.csv)            |   27.57   |   27.69   | 27.61 | 27.70 | uniform_withCP |
+|[BSD68_reproducibility_slurm-run1](./experiments/BSD68_reproducibility_slurm-run1/results_255_avg.csv)  |   27.67   |   27.72   | 27.71 | 27.72 | uniform_withCP | 
+|[BSD68_reproducibility_slurm_mean_bp_sk](./experiments/BSD68_reproducibility_slurm_mean_bp_sk/results_255_avg.csv) | 27.56 | __28.32__ | __28.06__ | __28.34__ | mean |
+|[BSD68_sbp_slurm](./experiments/BSD68_sbp_slurm/results_255_avg.csv)                                    | __27.82__ | 28.03 | 27.89 | 28.04 | uniform_withCP |
+|[BSD68_sbp_uniform_withoutCP_slurm](./experiments/BSD68_sbp_uniform_withoutCP_slurm/results_255_avg.csv)|   27.49   |   27.96   | 27.63 | 27.97 | uniform_withoutCP |
+|[BSD68_uniform_withoutCP_slurm](./experiments/BSD68_uniform_withoutCP_slurm/results_255_avg.csv)        |   26.06   |   27.37   | 26.11 | 27.37 | uniform_withoutCP |
 
 
 ## Convallaria
