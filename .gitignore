@@ -45,3 +45,5 @@ models/
 *.patch
 slurm_job.sh
 slurm-*.out
+
+best_PSNR/
