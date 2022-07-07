@@ -10,6 +10,8 @@ __Note:__ Shown PSNR values are computed with a fixed intensity range of 255.0.
 |[BSD68_sbp_slurm](./experiments/BSD68_sbp_slurm/results_255_avg.csv)                                    | __27.82__ | 28.03 | 27.89 | 28.04 | uniform_withCP |
 |[BSD68_sbp_uniform_withoutCP_slurm](./experiments/BSD68_sbp_uniform_withoutCP_slurm/results_255_avg.csv)|   27.49   |   27.96   | 27.63 | 27.97 | uniform_withoutCP |
 |[BSD68_uniform_withoutCP_slurm](./experiments/BSD68_uniform_withoutCP_slurm/results_255_avg.csv)        |   26.06   |   27.37   | 26.11 | 27.37 | uniform_withoutCP |
+|[BSD68_bp_uwCP_slurm](./experiments/BSD68_bp_uwCP_slurm/results_255_avg.csv)                            |   27.43   |   27.69   | 27.51 | 27.69 | uniform_withCP |
+|[BSD68_sk_uwCP_slurm](./experiments/BSD68_sk_uwCP_slurm/results_255_avg.csv)                            |   26.19   |   27.88   | 26.37 | 27.88 | uniform_withCP |
 
 
 ## Convallaria
@@ -40,6 +42,8 @@ __Note:__ Shown PSNR values are computed with a fixed intensity range of 255.0.
 |[Flywing_g70_n2v_sbp_slurm](./experiments/Flywing_g70_n2v_sbp_slurm)                              | __25.44__ | __25.45__ | __25.47__ | __25.49__ | uniform_withoutCP |
 |[Flywing_g70_n2v_sbp_uniform_withCP_slurm](./experiments/Flywing_g70_n2v_sbp_uniform_withCP_slurm)| 25.38 | 25.38 | 25.41 | 25.42 | uniform_withCP |
 |[Flywing_g70_n2v_uniform_withCP_slurm](./experiments/Flywing_g70_n2v_uniform_withCP_slurm)        | 25.16 | 25.17 | 25.19 | 25.20 | uniform_withCP |
+|[Flywing_g70_n2v_bp_uwCP_slurm](./experiments/Flywing_g70_n2v_bp_uwCP_slurm)                      | 25.09 | 25.27 | 25.14 | 25.30 | uniform_withCP |
+|[Flywing_g70_n2v_sk_uwCP_slurm](./experiments/Flywing_g70_n2v_sk_uwCP_slurm)                      | 25.41 | 25.45 | 25.46 | 25.49 | uniform_withCP |
 
 
 ## Mouse_g20
@@ -49,6 +53,8 @@ __Note:__ Shown PSNR values are computed with a fixed intensity range of 255.0.
 |[Mouse_g20_n2v_sbp_slurm](./experiments/Mouse_g20_n2v_sbp_slurm)                              | 34.52 | 34.57 | 34.55 | 34.59 | uniform_withoutCP |
 |[Mouse_g20_n2v_sbp_uniform_withCP_slurm](./experiments/Mouse_g20_n2v_sbp_uniform_withCP_slurm)| __34.64__ | __34.63__ | __34.64__ | __34.65__ | uniform_withCP |
 |[Mouse_g20_n2v_uniform_withCP_slurm](./experiments/Mouse_g20_n2v_uniform_withCP_slurm)        | 34.03 | 34.11 | 34.06 | 34.12 | uniform_withCP |
+|[Mouse_g20_n2v_bp_uwCP_slurm](./experiments/Mouse_g20_n2v_bp_uwCP_slurm)                      | 34.18 | 34.16 | 34.20 | 34.17 | uniform_withCP |
+|[Mouse_g20_n2v_sk_uwCP_slurm](./experiments/Mouse_g20_n2v_sk_uwCP_slurm)                      | 34.57 | 34.61 | 34.59 | 34.63 | uniform_withCP |
 
 
 ## Mouse_sp12
