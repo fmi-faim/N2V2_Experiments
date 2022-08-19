@@ -40,6 +40,8 @@ n2v/
 data/
 wandb/
 models/
+PSNR/
+best_PSNR/
 
 
 *.patch

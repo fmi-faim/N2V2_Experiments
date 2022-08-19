@@ -10,6 +10,7 @@ import numpy as np
 from n2v.utils.n2v_utils import manipulate_val_data
 from n2v.internals.N2V_DataGenerator import N2V_DataGenerator
 from n2v.utils.evaluation_utils import best_PSNR, PSNR
+from csbdeep.utils.utils import normalize_minmse
 
 import subprocess
 
@@ -35,26 +36,54 @@ def load_data(path, key="x_train"):
     else:
         raise NotImplementedError("File-format not supported.")
 
-def save_img(n, img, gt, pred, out_dir):
+def imshow_named(img, title, cmap="magma", center=False):
+    plt.title(title)
+    if center:
+        abs_max = np.abs(img).max()
+        plt.imshow(img, cmap=plt.get_cmap(cmap), vmin=-abs_max, vmax=abs_max)
+    else:
+        plt.imshow(img, cmap=plt.get_cmap(cmap))
+    plt.colorbar()
+
+def save_img(n, img, gt, pred, out_dir, dpi=320):
     img_dir = join(config["expdir"], out_dir)
     if not exists(img_dir):
         os.makedirs(img_dir)
 
-    img_pred = pred.squeeze().clip(0, 255).astype(np.uint8)
+    if gt.max() > 255:
+        img_pred = pred.squeeze().clip(0, 65536).astype(np.uint16)
+        img_gt = gt.squeeze().clip(0, 65536).astype(np.uint16)
+    else:
+        img_pred = pred.squeeze().clip(0, 255).astype(np.uint8)
+        img_gt = gt.squeeze().clip(0, 255).astype(np.uint8)
+    # write raw images pred and gt
     imsave(join(config["expdir"], out_dir, f"pred_{n:03}.tif"), img_pred)
+    imsave(join(config["expdir"], out_dir, f"gt_{n:03}.tif"), img_gt)
 
-    plt.figure(figsize=(16, 8))
-    plt.subplot(1, 3, 1)
-    plt.title("gt")
-    plt.imshow(gt)
-    plt.subplot(1, 3, 2)
-    plt.title("img")
-    plt.imshow(img.astype(np.float32))
-    plt.subplot(1, 3, 3)
-    plt.title("pred")
-    plt.imshow(pred)
-    plt.savefig(join(config["expdir"], out_dir, f"{n:03}.jpg"))
+    # figure comparing gt, img, and pred
+    plt.figure(figsize=(24, 8))
+    plt.subplot(1, 3, 1), plt.title("gt"), plt.imshow(gt, cmap=plt.get_cmap("magma"))
+    plt.subplot(1, 3, 2), plt.title("img"), plt.imshow(img, cmap=plt.get_cmap("magma"))
+    plt.subplot(1, 3, 3), plt.title("pred"), plt.imshow(pred, cmap=plt.get_cmap("magma"))
+    plt.savefig(join(config["expdir"], out_dir, f"{n:03}.jpg"), dpi=dpi)
     plt.close()
+
+    out = (gt - pred).squeeze()
+    plt.figure(figsize=(16, 8))
+    plt.subplot(1, 2, 1), imshow_named(out, "gt-img_pred", cmap="seismic", center=True)
+    plt.subplot(1, 2, 2), imshow_named(np.square(out), "square(gt-img_pred)")
+    plt.savefig(join(config["expdir"], out_dir, f"diff_raw_{n:03}.jpg"), dpi=dpi)
+    plt.close()
+    imsave(join(config["expdir"], out_dir, f"abs_raw_{n:03}.tif"), np.abs(out).astype(np.uint8))
+
+    img_n = normalize_minmse(pred, gt)
+    out = (gt - img_n).squeeze()
+    plt.figure(figsize=(16, 8))
+    plt.subplot(1, 2, 1), imshow_named(out, "gt-img_n", cmap="seismic", center=True)
+    plt.subplot(1, 2, 2), imshow_named(np.square(out), "square(gt-img_n)")
+    plt.savefig(join(config["expdir"], out_dir, f"diff_norm_{n:03}.jpg"), dpi=dpi)
+    plt.close()
+    imsave(join(config["expdir"], out_dir, f"abs_norm_{n:03}.tif"), np.abs(out).astype(np.uint8))
 
 def compute_best_psnrs(model, input_data, gt_data, fun):
     psnrs = []
