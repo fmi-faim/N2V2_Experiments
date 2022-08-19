@@ -135,16 +135,21 @@ __Note:__ Shown PSNR values are computed with a fixed intensity range of 255.0.
 |[Mouse_sp6_n2v_zeiss_median_bp_sk](experiments/Mouse_sp6_n2v_zeiss_median_bp_sk)              |   27.35   |   27.53   | __35.48__ | __35.50__ | median |
 
 
-## Results `Convallaria_v1_n2v_zeiss` test on `train` and `val`
+## Results `Convallaria_v1_n2v_zeiss` test on `train`
 | Name | PSNR_wbest | PSNR_wlast | bestPSNR_wbest | bestPSNR_wlast | Replacement |
 |------|------------|------------|----------------|----------------|-------------|
 |[Convallaria_v1_n2v_zeiss_testontrain_baseline](experiments/Convallaria_v1_n2v_zeiss_testontrain_baseline)         |   30.22   |   30.50   |   30.39   |   30.52   | uniform_withoutCP |
-|[Convallaria_v1_n2v_zeiss_testontrain_mean](experiments/Convallaria_v1_n2v_zeiss_testontrain_mean)                 |   30.52   |   31.18   |   31.16   |   31.37   | mean |
+|[Convallaria_v1_n2v_zeiss_testontrain_mean](experiments/Convallaria_v1_n2v_zeiss_testontrain_mean)                 |   30.52   | __31.18__ | __31.16__ | __31.37__ | mean |
 |[Convallaria_v1_n2v_zeiss_testontrain_mean_bp_sk](experiments/Convallaria_v1_n2v_zeiss_testontrain_mean_bp_sk)     |   28.35   |   31.01   |   28.97   |   31.09   | mean |
-|[Convallaria_v1_n2v_zeiss_testontrain_median](experiments/Convallaria_v1_n2v_zeiss_testontrain_median)             |   30.91   |   31.08   |   31.16   |   31.35   | median |
+|[Convallaria_v1_n2v_zeiss_testontrain_median](experiments/Convallaria_v1_n2v_zeiss_testontrain_median)             | __30.91__ |   31.08   | __31.16__ | __31.35__ | median |
 |[Convallaria_v1_n2v_zeiss_testontrain_median_bp_sk](experiments/Convallaria_v1_n2v_zeiss_testontrain_median_bp_sk) |   30.44   |   31.01   |   30.73   |   31.06   | median |
+
+
+## Results `Convallaria_v1_n2v_zeiss` test on `val`
+| Name | PSNR_wbest | PSNR_wlast | bestPSNR_wbest | bestPSNR_wlast | Replacement |
+|------|------------|------------|----------------|----------------|-------------|
 |[Convallaria_v1_n2v_zeiss_testonval_baseline](experiments/Convallaria_v1_n2v_zeiss_testonval_baseline)             |   30.57   |   30.72   |   30.65   |   30.74   | uniform_withoutCP |
-|[Convallaria_v1_n2v_zeiss_testonval_mean](experiments/Convallaria_v1_n2v_zeiss_testonval_mean)                     |   30.71   |   31.35   |   31.37   |   31.49   | mean |
+|[Convallaria_v1_n2v_zeiss_testonval_mean](experiments/Convallaria_v1_n2v_zeiss_testonval_mean)                     |   30.71   | __31.35__ | __31.37__ | __31.49__ | mean |
 |[Convallaria_v1_n2v_zeiss_testonval_mean_bp_sk](experiments/Convallaria_v1_n2v_zeiss_testonval_mean_bp_sk)         |   28.90   |   31.16   |   29.52   |   31.22   | mean |
-|[Convallaria_v1_n2v_zeiss_testonval_median](experiments/Convallaria_v1_n2v_zeiss_testonval_median)                 |   31.18   |   31.24   |   31.27   |   31.48   | median |
+|[Convallaria_v1_n2v_zeiss_testonval_median](experiments/Convallaria_v1_n2v_zeiss_testonval_median)                 | __31.18__ |   31.24   |   31.27   |   31.48   | median |
 |[Convallaria_v1_n2v_zeiss_testonval_median_bp_sk](experiments/Convallaria_v1_n2v_zeiss_testonval_median_bp_sk)     |   30.75   |   31.15   |   31.02   |   31.19   | median |
